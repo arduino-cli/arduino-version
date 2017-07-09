@@ -1,5 +1,6 @@
 ---
 layout: arduino-latest
+title: Arduino Latest Version
 ---
 
 # Arduino Latest Version 🛎 
