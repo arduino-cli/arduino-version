@@ -1,1 +1,9 @@
+---
+name: Arduino Latest
+description: Get the latest version of Arduino IDE programmatically!
 theme: jekyll-theme-tactile
+exclude:
+- CODE_OF_CONDUCT.md
+- LICENSE
+- README.md
+- _config.yml
