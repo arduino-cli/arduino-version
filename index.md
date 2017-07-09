@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: arduino-latest
 ---
 
 # Arduino Latest Version 🛎 
