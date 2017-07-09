@@ -41,7 +41,7 @@ darwin | x64 | [https://downloads.arduino.cc/arduino-`VERSION`-macosx.zip](https
 linux | x32 | [https://downloads.arduino.cc/arduino-`VERSION`-linux32.tar.xz](https://www.arduino.cc/en/Main/Software)
 linux | x64 | [https://downloads.arduino.cc/arduino-`VERSION`-linux64.tar.xz](https://www.arduino.cc/en/Main/Software)
 linux | arm | [https://downloads.arduino.cc/arduino-`VERSION`-linuxarm.tar.xz](https://www.arduino.cc/en/Main/Software)
-
+<br>
 
 ## Arduino download page
 The latest version available can be verified [here](https://www.arduino.cc/en/Main/Software).
