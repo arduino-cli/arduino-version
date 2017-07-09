@@ -4,7 +4,11 @@ Ever wonder which is the latest version of Arduino IDE currently released?
 
 ## Get the latest version number
 You can know witch is the latest version of arduino available by hitting this URL:
+```
+https://arduino-cli.github.io/arduino-latest/VERSION
+```
 
+## Usage
 ### curl
 ```bash
 $ curl https://arduino-cli.github.io/arduino-latest/VERSION
@@ -23,6 +27,7 @@ request(latest_endpoint, function (error, response, body) {
 ```
 
 ## Arduino mirrors
+Binaries of the Arduino IDE can be downloaded from the mirrors below:
 OS | Arch | URI
 ---|------|----
 win32 | x64 | [https://downloads.arduino.cc/arduino-`VERSION`-windows.zip](https://www.arduino.cc/en/Main/Software)
