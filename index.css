@@ -11,3 +11,10 @@
   transform-origin: top left;
   margin-left: 35px;
 }
+
+@media (max-width: 417px) {
+  #stargazers {
+    margin-left: 0px;
+    margin-top: 10px
+  }
+}
