@@ -28,6 +28,7 @@ request(latest_endpoint, function (error, response, body) {
 
 ## Arduino mirrors
 Binaries of the Arduino IDE can be downloaded from the mirrors below:
+
 OS | Arch | URI
 ---|------|----
 win32 | x64 | [https://downloads.arduino.cc/arduino-`VERSION`-windows.zip](https://www.arduino.cc/en/Main/Software)
