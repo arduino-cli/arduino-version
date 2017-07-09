@@ -1,3 +1,7 @@
+---
+layout: default
+---
+
 # Arduino Latest Version 🛎 
 Ever wonder which is the latest version of Arduino IDE currently released?
 <br>Now you can know it, programmatically!
