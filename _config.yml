@@ -7,3 +7,6 @@ exclude:
 - LICENSE
 - README.md
 - _config.yml
+sass:
+  style: :compressed
+  sass_dir: _css
