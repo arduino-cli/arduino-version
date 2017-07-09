@@ -1,4 +1,4 @@
-# Arduino Latest Version 📥
+# Arduino Latest Version 🛎 
 Ever wonder which is the latest version of Arduino IDE currently released?
 <br>Now you can know it, programmatically!
 
@@ -11,7 +11,6 @@ $ curl https://arduino-cli.github.io/arduino-latest/VERSION
 ```
 
 ### node
-
 ```javascript
 const request = require('request');
 const latest_endpoint = 'https://arduino-cli.github.io/arduino-latest/VERSION';
@@ -24,7 +23,6 @@ request(latest_endpoint, function (error, response, body) {
 ```
 
 ## Arduino mirrors
-
 OS | Arch | URI
 ---|------|----
 win32 | x64 | [https://downloads.arduino.cc/arduino-`VERSION`-windows.zip](https://www.arduino.cc/en/Main/Software)
@@ -33,5 +31,15 @@ linux | x32 | [https://downloads.arduino.cc/arduino-`VERSION`-linux32.tar.xz](ht
 linux | x64 | [https://downloads.arduino.cc/arduino-`VERSION`-linux64.tar.xz](https://www.arduino.cc/en/Main/Software)
 linux | arm | [https://downloads.arduino.cc/arduino-`VERSION`-linuxarm.tar.xz](https://www.arduino.cc/en/Main/Software)
 
+
 ## Arduino download page
 The latest version available can be verified [here](https://www.arduino.cc/en/Main/Software).
+
+## Authors
+* **Simone Primarosa** - [simonepri](https://github.com/simonepri)
+
+See also the list of [contributors](https://github.com/simonepri/roboprime/contributors) who participated in this project.
+
+
+## License
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
