@@ -1,98 +1,104 @@
 
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="/arduino-latest/assets/css/style.css?v=e791137762e8d3a848eb0d8115fed34a5db3858e">
-    <link rel="stylesheet" type="text/css" href="/arduino-latest/assets/css/print.css" media="print">
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-    <title>arduino-latest by arduino-cli</title>
-  </head>
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="/arduino-latest/assets/css/style.css?v=e791137762e8d3a848eb0d8115fed34a5db3858e">
+  <link rel="stylesheet" type="text/css" href="/arduino-latest/assets/css/print.css" media="print">
+  <!--[if lt IE 9]>
+  <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+  <title>Arduino Latest - Get the latest version of Arduino IDE programmatically!</title>
+  <style>
+    #stargazers {
+      -moz-transform: scale(0.25, 0.25); 
+      -webkit-transform: scale(0.25, 0.25); 
+      -o-transform: scale(0.25, 0.25);
+      -ms-transform: scale(0.25, 0.25);
+      transform: scale(0.25, 0.25); 
+      -moz-transform-origin: top left;
+      -webkit-transform-origin: top left;
+      -o-transform-origin: top left;
+      -ms-transform-origin: top left;
+      transform-origin: top left;
+    }
+  </style>
+</head>
 
-  <body>
-    <div id="container">
-      <div class="inner">
+<body>
+  <div id="container">
+    <div class="inner">
 
-        <header>
-          <h1>arduino-latest</h1>
-          <h2>🛎  Tells you witch is the latest version of Arduino IDE available!</h2>
-        </header>
-        <section id="downloads" class="clearfix">
-          
-	  
-          <a href="https://github.com/arduino-cli/arduino-latest" id="view-on-github" class="button"><span>View on GitHub</span></a>
-	  <iframe src="https://ghbtns.com/github-btn.html?user=twbs&repo=bootstrap&type=star&count=true&size=large" frameborder="0" scrolling="0" width="160px" height="30px"></iframe>
-		
-        </section> 
-        <hr>
-        <section id="main_content">
-          <h1 id="arduino-latest-version-">Arduino Latest Version 🛎</h1>
-<p>Ever wonder which is the latest version of Arduino IDE currently released?
-<br />Now you can know it, programmatically!</p>
+      <header>
+        <h1>Arduino Latest</h1>
+        <h2>🛎  Tells you witch is the latest version of Arduino IDE available!</h2>
+      </header>
+      
+      <section id="downloads" class="clearfix">
+        <a href="https://github.com/arduino-cli/arduino-latest" id="view-on-github" class="button"><span>View on GitHub</span></a>
+        <iframe id="stargazers" src="https://ghbtns.com/github-btn.html?user=twbs&repo=bootstrap&type=star&count=true&size=large" frameborder="0" scrolling="0" width="160px" height="49px"></iframe>
+      </section> 
+      <hr>
+      <section id="main_content">
+        <h1 id="arduino-latest-version-">Arduino Latest Version 🛎</h1>
+        <p>Ever wonder which is the latest version of Arduino IDE currently released?
+        <br />Now you can know it, programmatically!</p>
 
-<h2 id="get-the-latest-version-number">Get the latest version number</h2>
-<p>You can know witch is the latest version of arduino available by hitting this URL:</p>
-<div class="highlighter-rouge"><pre class="highlight"><code>https://arduino-cli.github.io/arduino-latest/VERSION
-</code></pre>
-</div>
+        <h2 id="get-the-latest-version-number">Get the latest version number</h2>
+        <p>You can know witch is the latest version of arduino available by hitting this URL:</p>
+        <div class="highlighter-rouge"><pre class="highlight"><code>
+          https://arduino-cli.github.io/arduino-latest/VERSION
+        </code></pre></div>
 
-<h2 id="usage">Usage</h2>
-<h3 id="curl">curl</h3>
-<div class="language-bash highlighter-rouge"><pre class="highlight"><code><span class="gp">$ </span>curl https://arduino-cli.github.io/arduino-latest/VERSION
-</code></pre>
-</div>
+        <h2 id="usage">Usage</h2>
+        <h3 id="curl">curl</h3>
+        <div class="language-bash highlighter-rouge"><pre class="highlight"><code>
+          <span class="gp">$ </span>curl https://arduino-cli.github.io/arduino-latest/VERSION
+        </code></pre></div>
 
-<h3 id="node">node</h3>
-<div class="language-javascript highlighter-rouge"><pre class="highlight"><code><span class="kr">const</span> <span class="nx">request</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'request'</span><span class="p">);</span>
-<span class="kr">const</span> <span class="nx">latest_endpoint</span> <span class="o">=</span> <span class="s1">'https://arduino-cli.github.io/arduino-latest/VERSION'</span><span class="p">;</span>
+        <h3 id="node">node</h3>
+        <div class="language-javascript highlighter-rouge"><pre class="highlight"><code>
+          <span class="kr">const</span> <span class="nx">request</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'request'</span><span class="p">);</span>
+          <span class="kr">const</span> <span class="nx">latest_endpoint</span> <span class="o">=</span> <span class="s1">'https://arduino-cli.github.io/arduino-latest/VERSION'</span><span class="p">;</span>
 
-<span class="nx">request</span><span class="p">(</span><span class="nx">latest_endpoint</span><span class="p">,</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">error</span><span class="p">,</span> <span class="nx">response</span><span class="p">,</span> <span class="nx">body</span><span class="p">)</span> <span class="p">{</span>
-   <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="nx">error</span> <span class="o">&amp;&amp;</span> <span class="nx">response</span><span class="p">.</span><span class="nx">statusCode</span> <span class="o">==</span> <span class="mi">200</span><span class="p">)</span> <span class="p">{</span>
-       <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">body</span><span class="p">)</span> <span class="c1">// Shows the version on the console.</span>
-   <span class="p">}</span>
-<span class="p">});</span>
-</code></pre>
-</div>
+          <span class="nx">request</span><span class="p">(</span><span class="nx">latest_endpoint</span><span class="p">,</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">error</span><span class="p">,</span> <span class="nx">response</span><span class="p">,</span> <span class="nx">body</span><span class="p">)</span> <span class="p">{</span>
+          <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="nx">error</span> <span class="o">&amp;&amp;</span> <span class="nx">response</span><span class="p">.</span><span class="nx">statusCode</span> <span class="o">==</span> <span class="mi">200</span><span class="p">)</span> <span class="p">{</span>
+             <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">body</span><span class="p">)</span> <span class="c1">// Shows the version on the console.</span>
+          <span class="p">}</span>
+          <span class="p">});</span>
+        </code></pre></div>
 
-<h2 id="arduino-mirrors">Arduino mirrors</h2>
-<p>Binaries of the Arduino IDE can be downloaded from the mirrors below:
-OS | Arch | URI
-—|——|—-
-win32 | x64 | <a href="https://www.arduino.cc/en/Main/Software">https://downloads.arduino.cc/arduino-<code class="highlighter-rouge">VERSION</code>-windows.zip</a>
-darwin | x64 | <a href="https://www.arduino.cc/en/Main/Software">https://downloads.arduino.cc/arduino-<code class="highlighter-rouge">VERSION</code>-macosx.zip</a>
-linux | x32 | <a href="https://www.arduino.cc/en/Main/Software">https://downloads.arduino.cc/arduino-<code class="highlighter-rouge">VERSION</code>-linux32.tar.xz</a>
-linux | x64 | <a href="https://www.arduino.cc/en/Main/Software">https://downloads.arduino.cc/arduino-<code class="highlighter-rouge">VERSION</code>-linux64.tar.xz</a>
-linux | arm | <a href="https://www.arduino.cc/en/Main/Software">https://downloads.arduino.cc/arduino-<code class="highlighter-rouge">VERSION</code>-linuxarm.tar.xz</a></p>
+        <h2 id="arduino-mirrors">Arduino mirrors</h2>
+        <p>Binaries of the Arduino IDE can be downloaded from the mirrors below:
+        OS | Arch | URI
+        —|——|—-
+        win32 | x64 | <a href="https://www.arduino.cc/en/Main/Software">https://downloads.arduino.cc/arduino-<code class="highlighter-rouge">VERSION</code>-windows.zip</a>
+        darwin | x64 | <a href="https://www.arduino.cc/en/Main/Software">https://downloads.arduino.cc/arduino-<code class="highlighter-rouge">VERSION</code>-macosx.zip</a>
+        linux | x32 | <a href="https://www.arduino.cc/en/Main/Software">https://downloads.arduino.cc/arduino-<code class="highlighter-rouge">VERSION</code>-linux32.tar.xz</a>
+        linux | x64 | <a href="https://www.arduino.cc/en/Main/Software">https://downloads.arduino.cc/arduino-<code class="highlighter-rouge">VERSION</code>-linux64.tar.xz</a>
+        linux | arm | <a href="https://www.arduino.cc/en/Main/Software">https://downloads.arduino.cc/arduino-<code class="highlighter-rouge">VERSION</code>-linuxarm.tar.xz</a></p>
 
-<h2 id="arduino-download-page">Arduino download page</h2>
-<p>The latest version available can be verified <a href="https://www.arduino.cc/en/Main/Software">here</a>.</p>
+        <h2 id="arduino-download-page">Arduino download page</h2>
+        <p>The latest version available can be verified <a href="https://www.arduino.cc/en/Main/Software">here</a>.</p>
 
-<h2 id="authors">Authors</h2>
-<ul>
-  <li><strong>Simone Primarosa</strong> - <a href="https://github.com/simonepri">simonepri</a></li>
-</ul>
+        <h2 id="authors">Authors</h2>
+        <ul>
+          <li><strong>Simone Primarosa</strong> - <a href="https://github.com/simonepri">simonepri</a></li>
+        </ul>
 
-<p>See also the list of <a href="https://github.com/simonepri/roboprime/contributors">contributors</a> who participated in this project.</p>
+        <p>See also the list of <a href="https://github.com/simonepri/roboprime/contributors">contributors</a> who participated in this project.</p>
 
-<h2 id="license">License</h2>
-<p>This project is licensed under the MIT License - see the <a href="/arduino-latest/LICENSE">LICENSE</a> file for details.</p>
+        <h2 id="license">License</h2>
+        <p>This project is licensed under the MIT License - see the <a href="/arduino-latest/LICENSE">LICENSE</a> file for details.</p>
 
-        </section>
-
-        <footer>
-        
-          arduino-latest is maintained by <a href="https://github.com/arduino-cli">arduino-cli</a><br>
-        
-          This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
-        </footer>
-
-      </div>
+      </section>
+      <footer>
+        arduino-latest is maintained by <a href="https://github.com/arduino-cli">arduino-cli</a><br>
+        This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.
+      </footer>
     </div>
-
-    
-  </body>
+  </div>
+</body>
 </html>
