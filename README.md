@@ -7,14 +7,14 @@ You can know witch is the latest version of arduino available by hitting this UR
 
 ### curl
 ```bash
-$ curl https://cdn.rawgit.com/arduino-cli/arduino-latest/master/VERSION
+$ curl https://arduino-cli.github.io/arduino-latest/VERSION
 ```
 
 ### node
 
 ```javascript
 const request = require('request');
-const latest_endpoint = 'https://cdn.rawgit.com/arduino-cli/arduino-latest/master/VERSION';
+const latest_endpoint = 'https://arduino-cli.github.io/arduino-latest/VERSION';
 
 request(latest_endpoint, function (error, response, body) {
    if (!error && response.statusCode == 200) {
