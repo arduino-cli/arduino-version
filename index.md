@@ -53,4 +53,4 @@ See also the list of [contributors](https://github.com/simonepri/roboprime/contr
 
 
 ## License
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License - see the [https://github.com/arduino-cli/arduino-latest/blob/master/LICENSE](LICENSE) file for details.
