@@ -1,9 +1,9 @@
-
 title: Arduino Latest
 description: Get the latest version of Arduino IDE programmatically!
+author: Simone Primarosa
+logo: 
 theme: jekyll-theme-tactile
 show_stargazers: true
-google_analytics:
 exclude:
 - CODE_OF_CONDUCT.md
 - LICENSE
@@ -11,3 +11,5 @@ exclude:
 - _config.yml
 gems:
   - jekyll-seo-tag
+google_site_verification: IaHL0xooF4eo0ktwg5FNjhYpE3Fx2JWOWFVaJNzABJ4
+google_analytics:
