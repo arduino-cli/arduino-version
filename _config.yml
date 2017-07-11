@@ -9,3 +9,5 @@ exclude:
 - LICENSE
 - README.md
 - _config.yml
+gems:
+  - jekyll-seo-tag
