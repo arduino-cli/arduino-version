@@ -2,6 +2,7 @@ title: Arduino Latest
 description: Get the latest version of Arduino IDE programmatically!
 author: Simone Primarosa
 logo: /arcuino-cli.png
+image: /arcuino-cli.png
 theme: jekyll-theme-tactile
 show_stargazers: true
 exclude:
