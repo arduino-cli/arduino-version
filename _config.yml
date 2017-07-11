@@ -11,5 +11,6 @@ exclude:
 - _config.yml
 gems:
   - jekyll-seo-tag
+  - jekyll-sitemap
 google_site_verification: IaHL0xooF4eo0ktwg5FNjhYpE3Fx2JWOWFVaJNzABJ4
 google_analytics:
