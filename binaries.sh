@@ -7,7 +7,7 @@ do
   echo 'Processing' ${file%.tar.xz}
   rm -rf ${file%.tar.xz}'.zip'
   echo '..Decrompressing' ${file%.tar.xz}'.tar.xz'
-  tar -xJf $file
+  tar -xlJf $file
   dir=`tar -tJf $file | head -1 | sed -e 's/\/.*//'`
   echo '..Compressing extracted' $dir 'folder into' ${file%.tar.xz}'.zip'
   zip -rq ${file%.tar.xz}.zip $dir/
@@ -21,7 +21,7 @@ do
   echo 'Processing' ${file%.tgz}
   rm -rf ${file%.tgz}'.zip'
   echo '..Decrompressing' ${file%.tgz}'.tgz'
-  tar -xzf $file
+  tar -xlzf $file
   dir=`tar -tzf $file | head -1 | sed -e 's/\/.*//'`
   echo '..Compressing extracted' $dir 'folder into' ${file%.tgz}'.zip'
   zip -rq ${file%.tgz}.zip $dir/
