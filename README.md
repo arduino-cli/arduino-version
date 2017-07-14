@@ -48,13 +48,15 @@ Binaries of the Arduino IDE can be downloaded from the mirrors below:
 
 OS | Arch | URI
 ---|------|----
-win32 | x64 | [https://github.com/arduino-cli/arduino-version/releases/download/`VERSION`/arduino-`VERSION`-windows.zip](https://www.arduino.cc/en/Main/Software)
-darwin | x64 | [https://github.com/arduino-cli/arduino-version/releases/download/`VERSION`/arduino-`VERSION`-macosx.zip](https://www.arduino.cc/en/Main/Software)
-linux | x32 | [https://github.com/arduino-cli/arduino-version/releases/download/`VERSION`/arduino-`VERSION`-linux32.zip](https://www.arduino.cc/en/Main/Software)
-linux | x64 | [https://github.com/arduino-cli/arduino-version/releases/download/`VERSION`/arduino-`VERSION`-linux64.zip](https://www.arduino.cc/en/Main/Software)
-linux | arm | [https://github.com/arduino-cli/arduino-version/releases/download/`VERSION`/arduino-`VERSION`-linuxarm.zip](https://www.arduino.cc/en/Main/Software)
+win32 | x64 | [https://github.com/arduino-cli/arduino-version/releases/download/`VERSION`/arduino-`VERSION`-windows.zip](https://arduino-cli.github.io/arduino-version)
+darwin | x64 | [https://github.com/arduino-cli/arduino-version/releases/download/`VERSION`/arduino-`VERSION`-macosx.zip](https://arduino-cli.github.io/arduino-version)
+linux | x32 | [https://github.com/arduino-cli/arduino-version/releases/download/`VERSION`/arduino-`VERSION`-linux32.zip](https://arduino-cli.github.io/arduino-version)
+linux | x64 | [https://github.com/arduino-cli/arduino-version/releases/download/`VERSION`/arduino-`VERSION`-linux64.zip](https://arduino-cli.github.io/arduino-version)
+linux | arm | [https://github.com/arduino-cli/arduino-version/releases/download/`VERSION`/arduino-`VERSION`-linuxarm.zip](https://arduino-cli.github.io/arduino-version)
 
-> arm binaries are not available for all versions 😞
+> Binaries for arm platforms are available only in those versions: `1.6.9-1.6.13` and `>=1.8.0`
+
+> Versions `<=1.6.4` and `1.7.0-1.7.11` needs `java >=7` installed on the machine
 
 ## Arduino download page
 The latest version available can be verified [here](https://www.arduino.cc/en/Main/Software).
